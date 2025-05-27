@@ -47,3 +47,9 @@ console.log(nameLengths);
 const sortedProvinces = [...provinces].sort();
 console.log(sortedProvinces);
 
+// 5. **Filtering Cape**
+
+// Use `filter` to remove provinces containing "Cape". Log the count of remaining provinces.
+
+const filteredProvinces = provinces.filter(provinces => !provinces.includes("Cape"));
+console.log(`Count of provinces not containing "Cape": ${filteredProvinces.length}`);
