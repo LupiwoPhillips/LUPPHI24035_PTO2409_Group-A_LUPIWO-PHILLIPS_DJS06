@@ -25,3 +25,10 @@ names.forEach(names => console.log(names));
 
 names.forEach((names, index) => 
   console.log(`${names} (${provinces[index]})`));
+
+ // 2. **Uppercase Transformation**
+ 
+ // Use `map` to create a new array of province names in all uppercase. Log the new array to the console.
+
+ const upperCaseNames = provinces.map(province => province.toUpperCase());
+console.log(upperCaseNames);
