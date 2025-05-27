@@ -13,3 +13,10 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+
+// 1. **ForEach Basics** 
+
+function isArrayEmpty(arr) {
+  return arr.length === 0;
+}
+console.log(isArrayEmpty);
