@@ -15,8 +15,3 @@ const products = [
 ]
 
 // 1. **ForEach Basics** 
-
-function isArrayEmpty(arr) {
-  return arr.length === 0;
-}
-console.log(isArrayEmpty);
