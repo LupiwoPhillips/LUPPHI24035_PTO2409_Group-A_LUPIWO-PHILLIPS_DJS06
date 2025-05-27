@@ -39,3 +39,11 @@ console.log(upperCaseNames);
 
 const nameLengths = names.map(name => name.length);
 console.log(nameLengths);
+
+// 4. **Sorting**
+
+// Use `sort` to alphabetically sort the provinces.
+
+const sortedProvinces = [...provinces].sort();
+console.log(sortedProvinces);
+
