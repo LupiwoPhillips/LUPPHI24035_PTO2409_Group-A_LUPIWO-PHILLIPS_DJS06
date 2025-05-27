@@ -23,3 +23,5 @@ names.forEach(names => console.log(names));
 
 // log each name with a matching province in the format "Name (Province)"
 
+names.forEach((names, index) => 
+  console.log(`${names} (${provinces[index]})`));
