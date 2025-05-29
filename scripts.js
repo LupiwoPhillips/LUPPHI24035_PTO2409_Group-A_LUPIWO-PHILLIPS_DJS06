@@ -95,6 +95,39 @@ const totalPrice = products
   .reduce((sum, p) => sum + Number(p.price), 0); // Convert prices and sum
   console.log(totalPrice);
 
+// 4. **Concatenate Product Names**
+
+// Use `reduce` to concatenate all product names into a single string.
+
+const concatenatedProductNames = products
+  .reduce((acc, p) => acc + p.product + ' ', ''); // Concatenate product names
+console.log(concatenatedProductNames.trim()); // Trim to remove trailing space
+
+// 5. **Find Extremes in Prices**
+
+// Identify the highest and lowest-priced items, returning a string formatted as "Highest: X. Lowest: Y."
+
+const prices = products
+  .filter(p => p.price) // Filter out products without prices
+  .map(p => Number(p.price)); // Convert prices to numbers
+  const highestPrice = Math.max(...prices);
+  const lowestPrice = Math.min(...prices);
+  const highestLowestPrice = `Highest: ${highestPrice}. Lowest: ${lowestPrice}.`;
+  console.log(highestLowestPrice);
+
+// 6. **Object Transformation**
+
+// Using `Object.entries` and `reduce`, recreate the products object with keys 'name' and 'cost', maintaining their original values.
+
+const transformedProducts = products.reduce((acc, p) => {
+  acc.push({ name: p.product, cost: Number(p.price) || 0 }); // Convert price to number or use 0 if empty
+  return acc;
+}, []);
+console.log(transformedProducts);
+
+
+
+
 
 
 
