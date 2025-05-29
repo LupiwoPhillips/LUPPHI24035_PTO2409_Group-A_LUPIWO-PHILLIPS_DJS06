@@ -84,3 +84,5 @@ products.forEach(product => console.log(product.product));
 
 // Filter out products with names longer than 5 characters.
 
+console.log( products.filter( product => product.product.length >= 5));
+
