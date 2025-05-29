@@ -60,3 +60,14 @@ console.log(`Count of provinces not containing "Cape": ${filteredProvinces.lengt
 
 const containsS = names.map(names => names.includes('S') || names.includes('s'));
 console.log(containsS);
+
+
+// 7. **Creating Object Mapping**
+
+// Use `reduce` to transform the names array into an object mapping names to their respective provinces.
+
+const nameProvinceMap = names.reduce((acc, name, index) => {
+  acc[name] = provinces[index];
+  return acc;
+}, {});
+console.log(nameProvinceMap);
