@@ -71,3 +71,16 @@ const nameProvinceMap = names.reduce((acc, name, index) => {
   return acc;
 }, {});
 console.log(nameProvinceMap);
+
+// #### Advanced Exercises (Single `console.log` Execution) ####
+
+// 1. **Log Products**
+
+// Iterate over the products array, logging each product name.
+
+products.forEach(product => console.log(product.product));
+
+// 2. **Filter by Name Length**
+
+// Filter out products with names longer than 5 characters.
+
